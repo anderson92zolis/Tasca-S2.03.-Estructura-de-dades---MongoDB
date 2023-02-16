@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "63eeaf99c256d0b35dc55f33"
+  },
+  "Name": "Anderson",
+  "AdressStreet": "Corsega 3",
+  "PhoneNomber": "676767667",
+  "Email": "az@hotmail.es",
+  "DataRegistration": "2023-1-10"
+},{
+  "_id": {
+    "$oid": "63eeaf99c256d0b35dc55f34"
+  },
+  "Name": "Kevin",
+  "AdressStreet": "Corsega 4",
+  "PhoneNomber": "686868688",
+  "Email": "kz@gmail.com",
+  "DataRegistration": "2023-1-11"
+}]

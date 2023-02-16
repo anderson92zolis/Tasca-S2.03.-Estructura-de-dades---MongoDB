@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "63eea0a8c256d0b35dc55f1a"
+  },
+  "Name": "Optica Toscana",
+  "PhoneNumber": 640512138,
+  "Fax": 19292992,
+  "NIF": {
+    "$numberLong": "3434343434"
+  },
+  "Adress": [
+    {
+      "NameStreet": "C/ de Provença 249",
+      "Floor": "1",
+      "Door": "2",
+      "City": "BARCELONA",
+      "CP": "08080"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63eea0a8c256d0b35dc55f1b"
+  },
+  "Name": "RocketGlasses",
+  "PhoneNumber": 609373594,
+  "Fax": {
+    "$numberLong": "1231232323434"
+  },
+  "NIF": {
+    "$numberLong": "2354534343"
+  },
+  "Adress": [
+    {
+      "NameStreet": "Av. de Gaudí 36",
+      "Floor": "1",
+      "Door": "2",
+      "City": "BARCELONA",
+      "CP": "08025"
+    }
+  ]
+}]

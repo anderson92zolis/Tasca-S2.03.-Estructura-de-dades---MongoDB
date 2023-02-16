@@ -1,0 +1,799 @@
+{
+	"tables": {
+		"244e295d-399e-4ba6-aa32-6b78fee3c6e8": {
+			"id": "244e295d-399e-4ba6-aa32-6b78fee3c6e8",
+			"visible": true,
+			"name": "Supplier",
+			"desc": "En primer lloc, l'òptica vol saber quin és el proveïdor de cadascuna de les ulleres. En concret vol saber de cada proveïdor:\n\n    El nom\n    L'adreça (carrer, número, pis, porta, ciutat, codi postal i país)\n    Telèfon\n    Fax\n    NIF.\n",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "02197c91-f453-490e-9bbc-97ad18857210",
+					"name": "_id",
+					"datatype": "objectId",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": ""
+				},
+				{
+					"id": "4d85eb6a-470e-4cbd-9257-016a825bca24",
+					"name": "Nom_Sup",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "77e7dee2-d253-4c0e-bf2d-1db6d004b283",
+					"name": "Adress",
+					"datatype": "5bc0b930-3d18-4d53-8e86-519a7933523d",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": true,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "f3bff6c3-7809-45c3-ba9f-832df233718b",
+					"name": "Phone_Number",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "74a7c532-566d-4902-ace9-e1709edf76a1",
+					"name": "Fax_Sup",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "f4299331-ca74-4cda-808e-fe505757838d",
+					"name": "NIF",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "02239f76-afbf-4d08-b1e2-f7d685c67e39",
+					"name": "Glasses",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true
+				}
+			],
+			"relations": [
+				"8a4fb62e-ab75-4760-8d22-739dd5fad4da"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "e0a80cf8-342e-4f65-90f7-66423c332b6c",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "ecffe268-b4fd-424b-80c5-3d171d73505d",
+							"colid": "02197c91-f453-490e-9bbc-97ad18857210"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"validationLevel": "na",
+			"validationAction": "na",
+			"collation": "",
+			"others": ""
+		},
+		"5bc0b930-3d18-4d53-8e86-519a7933523d": {
+			"id": "5bc0b930-3d18-4d53-8e86-519a7933523d",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "88e21b24-0d87-43e5-8e17-a9c4598b38e5",
+					"name": "NameStreet",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "2fafaaf0-1633-43a5-b495-d78db0386589",
+					"name": "Floor",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "64994a39-4615-41a5-8996-7f10467d9393",
+					"name": "Door",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "e0cec08d-acb7-46e4-ab2c-61c0f759d583",
+					"name": "City",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "ae316fb8-8df0-462d-b3ca-5195ef1ca97d",
+					"name": "CP",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "b27b22b2-3379-444a-a26c-990793f50fb6",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"7cb69481-e6ce-411a-98df-4f73bb33098d": {
+			"id": "7cb69481-e6ce-411a-98df-4f73bb33098d",
+			"visible": true,
+			"name": "Glasses",
+			"desc": "La política de compres de l'òptica es basa que les ulleres d'una marca es compraran a un únic proveïdor (així en podrà treure més bons preus), però poden comprar ulleres de diverses marques a un proveïdor. De les ulleres vol saber:\n\n    La marca.\n    La graduació de cadascun dels vidres.\n    El tipus de muntura (flotant, pasta o metàl·lica).\n    El color de la muntura.\n    El color de cada vidre.\n    El preu.\n",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "d06164b9-99dc-4264-bcde-68aa6afd66c6",
+					"name": "_id",
+					"datatype": "objectId",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": ""
+				},
+				{
+					"id": "9a01c9ba-76ea-4d92-b571-d333311b778e",
+					"name": "Brands",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "70531840-d7ed-4faa-a178-3e107e1b93ce",
+					"name": "GlassesGraduation",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "9a1e6c41-cad3-487f-8e34-30ec13fdd887",
+					"name": "FrameType",
+					"datatype": "enum",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "'Floating','Paste','Metalic'",
+					"validate": "",
+					"pattern": false
+				},
+				{
+					"id": "7ee1a674-1dfe-401a-afa0-6e260cef465d",
+					"name": "Colour_Frame",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "5767d4b9-394a-45a2-91e6-73b9e4ddb2b7",
+					"name": "Colour_Glasses",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "d20516ed-d9a4-48d6-aaa7-1776a2cd9306",
+					"name": "Price",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [
+				"68685727-b857-46a9-814f-e33b33ea42df",
+				"8a4fb62e-ab75-4760-8d22-739dd5fad4da"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "570a963d-1dee-4a0a-bd73-af912f492957",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "1cef65b8-59f2-410f-8846-9d5606d83a13",
+							"colid": "d06164b9-99dc-4264-bcde-68aa6afd66c6"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"validationLevel": "na",
+			"validationAction": "na",
+			"collation": "",
+			"others": ""
+		},
+		"5960a122-0af8-4365-b97a-0e401bc59209": {
+			"id": "5960a122-0af8-4365-b97a-0e401bc59209",
+			"visible": true,
+			"name": "Clients",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "7768a2a2-ffce-468c-b01a-b4a3e59b2528",
+					"name": "_id",
+					"datatype": "objectId",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": ""
+				},
+				{
+					"id": "5dd123e6-192c-414d-8e0b-687e35d94835",
+					"name": "Name",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "01f4d6e3-72ba-4089-aa73-573e27b22196",
+					"name": "AdressStreet",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "af350f5d-a1cc-463f-9290-a3088c55d6a0",
+					"name": "PhoneNomber",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "b5ce5ea3-b85a-45f0-9000-3ddd163bce26",
+					"name": "Email",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "e621c1e1-0ae2-4497-b837-c8f9ea3a0338",
+					"name": "DataRegistration",
+					"datatype": "date",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "c047aec1-ddd6-49c3-a87f-ac5e83c66b7b",
+					"name": "Clients",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true
+				},
+				{
+					"id": "b0d8c701-f9a2-4e74-a6d9-cc2d96c27a0c",
+					"name": "Glasses",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true
+				}
+			],
+			"relations": [
+				"528c38b9-abda-466a-a55a-429ec7e978c0",
+				"68685727-b857-46a9-814f-e33b33ea42df",
+				"0bcc019c-9353-40c9-bb2a-8e73dd3abd45"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "d14cc9a6-c530-488e-a654-b4a198791b56",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "c36a0d19-0dc1-4fa9-a212-48b76a7c4084",
+							"colid": "7768a2a2-ffce-468c-b01a-b4a3e59b2528"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"validationLevel": "na",
+			"validationAction": "na",
+			"collation": "",
+			"others": ""
+		},
+		"a9011bee-e605-4b25-98bb-02b003a8dcdf": {
+			"id": "a9011bee-e605-4b25-98bb-02b003a8dcdf",
+			"visible": true,
+			"name": "Employee",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "d91814e6-a0b8-40be-994b-0c5fdefc2d6e",
+					"name": "_id",
+					"datatype": "objectId",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": ""
+				},
+				{
+					"id": "2fc5e215-2a5a-426a-9b7a-330c83faed15",
+					"name": "Name",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "d5c25cc6-623d-4a32-8e1f-9a9efa0288b6",
+					"name": "Surname",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "efa3494c-9f12-4144-9f66-dc3a2ff57baa",
+					"name": "Clients",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true
+				}
+			],
+			"relations": [
+				"0bcc019c-9353-40c9-bb2a-8e73dd3abd45"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "4c744ade-0489-4e83-a9e1-db8b195923bf",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "9d1dcdb8-6faa-4a0a-aeee-53599d3ff12b",
+							"colid": "d91814e6-a0b8-40be-994b-0c5fdefc2d6e"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"validationLevel": "na",
+			"validationAction": "na",
+			"collation": "",
+			"others": ""
+		}
+	},
+	"relations": {
+		"528c38b9-abda-466a-a55a-429ec7e978c0": {
+			"id": "528c38b9-abda-466a-a55a-429ec7e978c0",
+			"visible": true,
+			"name": "Clients_Clients",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "d14cc9a6-c530-488e-a654-b4a198791b56",
+			"parent": "5960a122-0af8-4365-b97a-0e401bc59209",
+			"child": "5960a122-0af8-4365-b97a-0e401bc59209",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "34b0712e-d308-4cbe-a412-fab883eeaea9",
+					"parentcol": "7768a2a2-ffce-468c-b01a-b4a3e59b2528",
+					"childcol": "c047aec1-ddd6-49c3-a87f-ac5e83c66b7b"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"68685727-b857-46a9-814f-e33b33ea42df": {
+			"id": "68685727-b857-46a9-814f-e33b33ea42df",
+			"visible": true,
+			"name": "Glasses_Clients",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "570a963d-1dee-4a0a-bd73-af912f492957",
+			"parent": "7cb69481-e6ce-411a-98df-4f73bb33098d",
+			"child": "5960a122-0af8-4365-b97a-0e401bc59209",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "0be4c117-50c7-466d-bd51-1d02ce808dfa",
+					"parentcol": "d06164b9-99dc-4264-bcde-68aa6afd66c6",
+					"childcol": "b0d8c701-f9a2-4e74-a6d9-cc2d96c27a0c"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"0bcc019c-9353-40c9-bb2a-8e73dd3abd45": {
+			"id": "0bcc019c-9353-40c9-bb2a-8e73dd3abd45",
+			"visible": true,
+			"name": "Clients_Employee",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "d14cc9a6-c530-488e-a654-b4a198791b56",
+			"parent": "5960a122-0af8-4365-b97a-0e401bc59209",
+			"child": "a9011bee-e605-4b25-98bb-02b003a8dcdf",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "a060e470-47f4-4088-aae2-4a50685037f3",
+					"parentcol": "7768a2a2-ffce-468c-b01a-b4a3e59b2528",
+					"childcol": "efa3494c-9f12-4144-9f66-dc3a2ff57baa"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"8a4fb62e-ab75-4760-8d22-739dd5fad4da": {
+			"id": "8a4fb62e-ab75-4760-8d22-739dd5fad4da",
+			"visible": true,
+			"name": "Glasses_Supplier",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "570a963d-1dee-4a0a-bd73-af912f492957",
+			"parent": "7cb69481-e6ce-411a-98df-4f73bb33098d",
+			"child": "244e295d-399e-4ba6-aa32-6b78fee3c6e8",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "315d8feb-3a27-4648-973e-32282ce26501",
+					"parentcol": "d06164b9-99dc-4264-bcde-68aa6afd66c6",
+					"childcol": "02239f76-afbf-4d08-b1e2-f7d685c67e39"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		}
+	},
+	"notes": {},
+	"lines": {},
+	"model": {
+		"name": "opticalDB",
+		"id": "fd543467-dd07-4acc-a046-f48a04a23726",
+		"activeDiagram": "9e9dc25d-7132-444e-a099-eb427d5bb4a8",
+		"desc": "Una òptica, anomenada “Cul d'Ampolla”, vol informatitzar la gestió dels clients/es i vendes d'ulleres.",
+		"path": "",
+		"type": "MONGODB",
+		"version": 1,
+		"parentTableInFkCols": true,
+		"caseConvention": "under",
+		"replaceSpace": "_",
+		"color": "transparent",
+		"sideSelections": true,
+		"isDirty": true,
+		"storedin": {
+			"major": 6,
+			"minor": 0,
+			"extra": 0
+		},
+		"embeddedInParentsIsDisplayed": true,
+		"schemaContainerIsDisplayed": false,
+		"cardinalityIsDisplayed": false,
+		"estimatedSizeIsDisplayed": false,
+		"writeFileParam": true,
+		"currentDisplayMode": "metadata",
+		"def_coltopk": true,
+		"def_validationLevel": "na",
+		"def_validationAction": "na",
+		"def_collation": "",
+		"def_others": "",
+		"lastSaved": "Thu Feb 16 2023 22:14:05 GMT+0100 (Central European Standard Time)",
+		"modelScriptsDir": "C:\\Users\\azoli\\OneDrive\\Documents\\MySQLAZ\\Tasca S2.03. Estructura de dades - MongoDB\\n1exercici1"
+	},
+	"otherObjects": {},
+	"diagrams": {
+		"9e9dc25d-7132-444e-a099-eb427d5bb4a8": {
+			"name": "Main Diagram",
+			"description": "",
+			"id": "9e9dc25d-7132-444e-a099-eb427d5bb4a8",
+			"keysgraphics": true,
+			"linegraphics": "detailed",
+			"zoom": 1,
+			"background": "transparent",
+			"lineColor": "transparent",
+			"isOpen": true,
+			"main": true,
+			"diagramItems": {
+				"244e295d-399e-4ba6-aa32-6b78fee3c6e8": {
+					"referencedItemId": "244e295d-399e-4ba6-aa32-6b78fee3c6e8",
+					"x": 45,
+					"y": 42,
+					"gHeight": 244,
+					"gWidth": 215,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": true,
+					"autoExpand": true
+				},
+				"5bc0b930-3d18-4d53-8e86-519a7933523d": {
+					"referencedItemId": "5bc0b930-3d18-4d53-8e86-519a7933523d",
+					"x": 200,
+					"y": 40,
+					"gHeight": 60,
+					"gWidth": 160,
+					"color": "#ffffff",
+					"background": "#8bc34a",
+					"resized": false,
+					"autoExpand": true,
+					"collapsed": false
+				},
+				"7cb69481-e6ce-411a-98df-4f73bb33098d": {
+					"referencedItemId": "7cb69481-e6ce-411a-98df-4f73bb33098d",
+					"x": 518,
+					"y": 30,
+					"gHeight": 211,
+					"gWidth": 256,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": true,
+					"autoExpand": true
+				},
+				"5960a122-0af8-4365-b97a-0e401bc59209": {
+					"referencedItemId": "5960a122-0af8-4365-b97a-0e401bc59209",
+					"x": 578,
+					"y": 312,
+					"gHeight": 197,
+					"gWidth": 295,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": true,
+					"autoExpand": true
+				},
+				"a9011bee-e605-4b25-98bb-02b003a8dcdf": {
+					"referencedItemId": "a9011bee-e605-4b25-98bb-02b003a8dcdf",
+					"x": 57,
+					"y": 390,
+					"gHeight": 99,
+					"gWidth": 197,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true
+				}
+			},
+			"scroll": {
+				"x": 0,
+				"y": 0
+			},
+			"type": "erd"
+		}
+	},
+	"order": [],
+	"collapsedTreeItems": [],
+	"reverseStats": {}
+}
