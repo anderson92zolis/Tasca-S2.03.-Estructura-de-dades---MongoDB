@@ -1,0 +1,53 @@
+[{
+  "_id": {
+    "$oid": "63efab9003cd24b314c430f2"
+  },
+  "supplierID": {
+    "$oid": "63ef6d5038d359088aeab302"
+  },
+  "Clients": {
+    "Name": "Itxel Ne",
+    "Adress": {
+      "NameStreet": "Plaza sagrada familia 4",
+      "Floor": "3",
+      "Door": "2",
+      "City": "Bcn",
+      "CP": "08012"
+    },
+    "PhoneNumber": {
+      "$numberLong": "6343434334"
+    },
+    "Email": "it@icloud.com",
+    "DataRegistration": "2023-01-03",
+    "RecomendClient": "idCliente",
+    "Employee": {
+      "Name": "Juan",
+      "Surname": "Alcón"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63efabe003cd24b314c430f4"
+  },
+  "supplierID": {
+    "$oid": "63efa64003cd24b314c430ed"
+  },
+  "Clients": {
+    "Name": "Flor Pa",
+    "Adress": {
+      "NameStreet": "C Torres 34",
+      "Floor": "1",
+      "Door": "3",
+      "City": "Bcn",
+      "CP": "08015"
+    },
+    "PhoneNumber": 676767676,
+    "Email": "fit@icloud.com",
+    "DataRegistration": "2023-01-02",
+    "RecomendClient": "idCliente",
+    "Employee": {
+      "Name": "Juan",
+      "Surname": "Alcón"
+    }
+  }
+}]
