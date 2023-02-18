@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "63f0d3ddc7c2cbccf15a3920"
+  },
+  "Adress": {
+    "Street": "C/ Napoles 3",
+    "Floor": "",
+    "Door": "",
+    "CP": "08030",
+    "Locality": "BARCELONA",
+    "Province": "BARCELONA"
+  },
+  "Employes": {
+    "Name": "Juan",
+    "FSurname": "Segovia",
+    "SSurname": "Paca",
+    "NIF": "25627812m",
+    "PhoneNumber": "098787898",
+    "Employment": "Chef"
+  }
+},{
+  "_id": {
+    "$oid": "63f0d40ec7c2cbccf15a3922"
+  },
+  "Adress": {
+    "Street": "C/ Napoles 3",
+    "Floor": "",
+    "Door": "",
+    "CP": "08030",
+    "Locality": "BARCELONA",
+    "Province": "BARCELONA"
+  },
+  "Employes": {
+    "Name": "Pedro",
+    "FSurname": "Paucar",
+    "SSurname": "Lindo",
+    "NIF": "34537812m",
+    "PhoneNumber": "682839383",
+    "Employment": "Deliver"
+  }
+}]

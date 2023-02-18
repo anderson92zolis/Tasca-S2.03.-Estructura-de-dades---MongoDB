@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "63f0d214c7c2cbccf15a391a"
+  },
+  "Name": "Anderson",
+  "Zolis": "Zolis",
+  "Adress": {
+    "Street": "C/ Corsega 1",
+    "Floor": "3",
+    "Door": "2",
+    "CP": "08029",
+    "Locality": "BARCELONA",
+    "Province": "BARCELONA"
+  },
+  "PhoneNumber": 682828282
+},{
+  "_id": {
+    "$oid": "63f0d23ac7c2cbccf15a391c"
+  },
+  "Name": "Olga",
+  "Zolis": "ch",
+  "Adress": {
+    "Street": "C/ Corsega 2",
+    "Floor": "1",
+    "Door": "4",
+    "CP": "08010",
+    "Locality": "BARCELONA",
+    "Province": "BARCELONA"
+  },
+  "PhoneNumber": {
+    "$numberLong": "6828323234"
+  }
+}]

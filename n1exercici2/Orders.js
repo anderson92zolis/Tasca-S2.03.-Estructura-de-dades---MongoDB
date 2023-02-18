@@ -1,0 +1,7 @@
+
+db.createCollection( 'Orders', {validator: {$jsonSchema: {bsonType: 'object',title:'Orders',required: [         'Data/Hours',          'TakeAway_PickUp',          'Products',          'PreuTotal',          'Shops',          'Clients'],properties: {Data/Hours: {bsonType: 'date'},TakeAway_PickUp: {enum: "PickUp","TakeAway"},Delivery: {bsonType: 'object',
+title:'object',properties: {Name: {bsonType: 'string'},Data: {bsonType: 'date'}}},Products: {bsonType: 'array',items: {
+title:'object',properties: {Pizza: {bsonType: 'object',
+title:'object',properties: {Name: {bsonType: 'string'},Description: {bsonType: 'string'},photo: {bsonType: 'string'},price: {bsonType: 'int'},Category: {bsonType: 'objectId'}}},Burguer: {bsonType: 'object',
+title:'object',properties: {Name: {bsonType: 'string'},Description: {bsonType: 'string'},Photo: {bsonType: 'string'},Price: {bsonType: 'int'}}},Drinks: {bsonType: 'object',
+title:'object',properties: {Name: {bsonType: 'string'},Description: {bsonType: 'string'},Photo: {bsonType: 'string'},Price: {bsonType: 'int'}}},QuantityProducts: {bsonType: 'int'},TotalPrice: {bsonType: 'int'}}}},PreuTotal: {bsonType: 'int'},Shops: {bsonType: 'objectId'},Clients: {bsonType: 'objectId'}}         }      }});  

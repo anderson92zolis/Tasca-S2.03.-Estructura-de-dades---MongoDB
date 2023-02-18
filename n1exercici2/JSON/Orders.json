@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "63f0db05c7c2cbccf15a3928"
+  },
+  "Data": "2023-01-20 16:12:30",
+  "TakeAway_PickUp": "TakeAway",
+  "Delivery": {
+    "NAmeDelivery": "Juan",
+    "DATA": "2023-01-20 16:30:30"
+  },
+  "Products": {
+    "Pizza": {
+      "Name": "HAWAHIANA",
+      "Description": "WithoutTomate",
+      "Photo": "www.photopizza.com",
+      "Price": 14,
+      "Category": "FAMILIAR"
+    },
+    "Drinks": {
+      "Name": "COCA-COLA",
+      "Description": "CERO",
+      "Photo": "www.COCACOLA.com",
+      "Price": 6,
+      "Category": "2 LITROS"
+    },
+    "QuantityProducts": 2,
+    "Price": 20
+  },
+  "TotalPrice": 25,
+  "Shop": {
+    "$oid": "63f0d40ec7c2cbccf15a3922"
+  },
+  "Clients": {
+    "$oid": "63f0d214c7c2cbccf15a391a"
+  }
+},{
+  "_id": {
+    "$oid": "63f0dbd9c7c2cbccf15a392b"
+  },
+  "Data": "2023-01-20 12:12:30",
+  "TakeAway_PickUp": "TakeAway",
+  "Delivery": {
+    "NAmeDelivery": "Juan",
+    "DATA": "2023-01-20 12:50:30"
+  },
+  "Products": {
+    "Pizza": {
+      "Name": "Mediterranea",
+      "Description": "",
+      "Photo": "www.photopizza2.com",
+      "Price": 15.3,
+      "Category": "small"
+    },
+    "Drinks": {
+      "Name": "fanta",
+      "Description": "",
+      "Photo": "www.fanta.com",
+      "Price": 3,
+      "Category": "1 LITRO"
+    },
+    "QuantityProducts": 2,
+    "Price": 17.3
+  },
+  "TotalPrice": 21,
+  "Shop": {
+    "$oid": "63f0d40ec7c2cbccf15a3922"
+  },
+  "Clients": {
+    "$oid": "63f0d23ac7c2cbccf15a391c"
+  }
+}]
