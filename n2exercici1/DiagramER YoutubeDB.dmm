@@ -20,18 +20,6 @@
 					"list": false
 				},
 				{
-					"id": "468f1a7b-7e98-4c7d-b745-ad1bfd954fcf",
-					"name": "Video",
-					"datatype": "objectId",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"comment": "",
-					"defaultvalue": "",
-					"data": "",
-					"fk": true
-				},
-				{
 					"id": "1d771393-6d1b-49bd-baf6-0aafe724582e",
 					"name": "Email",
 					"datatype": "string",
@@ -170,11 +158,25 @@
 					"list": true,
 					"enum": "",
 					"validate": ""
+				},
+				{
+					"id": "bed8c3f7-4c89-4ec7-b63b-8dd9a7ddf914",
+					"name": "Video",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true,
+					"ref": "Video",
+					"list": true
 				}
 			],
 			"relations": [
 				"5250cb7a-c9cf-4c0b-aa40-8b42bc29416b",
-				"c413e284-146c-442d-be29-28dc655524a7"
+				"19d20f23-61e3-4efb-9746-08a38b74050b"
 			],
 			"lines": [],
 			"keys": [
@@ -418,8 +420,8 @@
 				}
 			],
 			"relations": [
-				"c413e284-146c-442d-be29-28dc655524a7",
-				"012cbddc-d9df-4bae-97e2-ab1afc2d42f0"
+				"012cbddc-d9df-4bae-97e2-ab1afc2d42f0",
+				"19d20f23-61e3-4efb-9746-08a38b74050b"
 			],
 			"lines": [],
 			"keys": [
@@ -1089,31 +1091,6 @@
 			"generate": true,
 			"generateCustomCode": true
 		},
-		"c413e284-146c-442d-be29-28dc655524a7": {
-			"id": "c413e284-146c-442d-be29-28dc655524a7",
-			"visible": true,
-			"name": "Video_User",
-			"desc": "",
-			"type": "identifying",
-			"parent_key": "ed2f9bde-5042-4eb9-b612-5d0b21a24413",
-			"parent": "32cfc91d-1694-40e7-b860-deacef6cb876",
-			"child": "6ec301da-244f-4d49-bd2e-5a3432c470cd",
-			"c_mp": "true",
-			"c_mch": "true",
-			"c_p": "one",
-			"c_ch": "many",
-			"c_cp": "",
-			"c_cch": "",
-			"cols": [
-				{
-					"id": "97b36e6b-1e87-490e-812c-f335eadc40dc",
-					"parentcol": "2a637e53-9b11-44f6-b39e-9909c74cec47",
-					"childcol": "468f1a7b-7e98-4c7d-b745-ad1bfd954fcf"
-				}
-			],
-			"generate": true,
-			"generateCustomCode": true
-		},
 		"012cbddc-d9df-4bae-97e2-ab1afc2d42f0": {
 			"id": "012cbddc-d9df-4bae-97e2-ab1afc2d42f0",
 			"visible": true,
@@ -1138,6 +1115,31 @@
 			],
 			"generate": true,
 			"generateCustomCode": true
+		},
+		"19d20f23-61e3-4efb-9746-08a38b74050b": {
+			"id": "19d20f23-61e3-4efb-9746-08a38b74050b",
+			"visible": true,
+			"name": "Video_User",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "ed2f9bde-5042-4eb9-b612-5d0b21a24413",
+			"parent": "32cfc91d-1694-40e7-b860-deacef6cb876",
+			"child": "6ec301da-244f-4d49-bd2e-5a3432c470cd",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "eb7e007f-24ab-4471-b336-518da3c0fb1a",
+					"parentcol": "2a637e53-9b11-44f6-b39e-9909c74cec47",
+					"childcol": "bed8c3f7-4c89-4ec7-b63b-8dd9a7ddf914"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
 		}
 	},
 	"notes": {},
@@ -1155,7 +1157,7 @@
 		"replaceSpace": "_",
 		"color": "transparent",
 		"sideSelections": true,
-		"isDirty": true,
+		"isDirty": false,
 		"storedin": {
 			"major": 6,
 			"minor": 0,
@@ -1172,7 +1174,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": "Mon Feb 20 2023 01:22:56 GMT+0100 (Central European Standard Time)",
+		"lastSaved": "Wed Feb 22 2023 13:19:45 GMT+0100 (Central European Standard Time)",
 		"modelScriptsDir": "C:\\Users\\azoli\\OneDrive\\Documents\\MySQLAZ\\Tasca S2.03. Estructura de dades - MongoDB\\n2exercici1",
 		"modelPdfReportPath": "C:\\Users\\azoli\\OneDrive\\Documents\\MySQLAZ\\Tasca S2.03. Estructura de dades - MongoDB\\n2exercici1\\YoutubeDB.pdf"
 	},
@@ -1184,7 +1186,7 @@
 			"id": "b42ccfc9-ea3b-4fe3-a877-d620a6a76183",
 			"keysgraphics": true,
 			"linegraphics": "detailed",
-			"zoom": 0.6,
+			"zoom": 0.7,
 			"background": "transparent",
 			"lineColor": "transparent",
 			"isOpen": true,
@@ -1192,8 +1194,8 @@
 			"diagramItems": {
 				"6ec301da-244f-4d49-bd2e-5a3432c470cd": {
 					"referencedItemId": "6ec301da-244f-4d49-bd2e-5a3432c470cd",
-					"x": 45,
-					"y": 30,
+					"x": 46,
+					"y": 32,
 					"gHeight": 510,
 					"gWidth": 236,
 					"color": "#ffffff",

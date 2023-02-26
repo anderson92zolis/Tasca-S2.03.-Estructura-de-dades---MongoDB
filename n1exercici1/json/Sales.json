@@ -1,11 +1,12 @@
 [{
   "_id": {
-    "$oid": "63efab9003cd24b314c430f2"
+    "$oid": "63fa124e35a1c29675147125"
   },
   "supplierID": {
-    "$oid": "63ef6d5038d359088aeab302"
+    "$oid": "63fbba25b9027cdf3bfd7b87"
   },
   "Clients": {
+    "_id": "3",
     "Name": "Itxel Ne",
     "Adress": {
       "NameStreet": "Plaza sagrada familia 4",
@@ -18,8 +19,12 @@
       "$numberLong": "6343434334"
     },
     "Email": "it@icloud.com",
-    "DataRegistration": "2023-01-03",
-    "RecomendClient": "idCliente",
+    "DataRegistration": {
+      "$date": {
+        "$numberLong": "1672704000000"
+      }
+    },
+    "RecomendClient": "1",
     "Employee": {
       "Name": "Juan",
       "Surname": "Alcón"
@@ -27,12 +32,13 @@
   }
 },{
   "_id": {
-    "$oid": "63efabe003cd24b314c430f4"
+    "$oid": "63fa12e235a1c29675147127"
   },
   "supplierID": {
-    "$oid": "63efa64003cd24b314c430ed"
+    "$oid": "63fbbbbeb9027cdf3bfd7b89"
   },
   "Clients": {
+    "_id": "2",
     "Name": "Flor Pa",
     "Adress": {
       "NameStreet": "C Torres 34",
@@ -43,10 +49,44 @@
     },
     "PhoneNumber": 676767676,
     "Email": "fit@icloud.com",
-    "DataRegistration": "2023-01-02",
-    "RecomendClient": "idCliente",
+    "DataRegistration": {
+      "$date": {
+        "$numberLong": "1672790400000"
+      }
+    },
+    "RecomendClient": "1",
     "Employee": {
       "Name": "Juan",
+      "Surname": "Alcón"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63fa138335a1c2967514712b"
+  },
+  "supplierID": {
+    "$oid": "63fbbc11b9027cdf3bfd7b8b"
+  },
+  "Clients": {
+    "_id": "1",
+    "Name": "Juan Landu",
+    "Adress": {
+      "NameStreet": "Corsega 51",
+      "Floor": "2",
+      "Door": "2",
+      "City": "Bcn",
+      "CP": "08029"
+    },
+    "PhoneNumber": 682812929,
+    "Email": "juan_pepe@icloud.com",
+    "DataRegistration": {
+      "$date": {
+        "$numberLong": "1675382400000"
+      }
+    },
+    "RecomendClient": null,
+    "Employee": {
+      "Name": "Pepe",
       "Surname": "Alcón"
     }
   }

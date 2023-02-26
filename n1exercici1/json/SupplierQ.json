@@ -1,0 +1,123 @@
+[{
+  "_id": {
+    "$oid": "63fbba25b9027cdf3bfd7b87"
+  },
+  "Nom_Sup": "Cristal",
+  "Phone_Number": 992929292,
+  "Fax_Sup": 22222222,
+  "NIF": "89234321P",
+  "BrandName": "AdidasVision",
+  "Brands": {
+    "Glasses": {
+      "glasses_id": "5",
+      "GlassesGraduation": {
+        "Left": "2.2",
+        "Right": "1.2"
+      },
+      "Mount": {
+        "Frame": [
+          "Floating"
+        ],
+        "Colour": "Yello"
+      },
+      "ColourGlasses": "Transparent",
+      "Price": 143
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63fbbbbeb9027cdf3bfd7b89"
+  },
+  "Nom_Sup": "OjoFIno",
+  "Phone_Number": 223232323,
+  "Fax_Sup": 23232323,
+  "NIF": "23232323M",
+  "BrandName": "Rayban",
+  "Brands": [
+    {
+      "glasses_id": 0,
+      "GlassesGraduation": {
+        "Left": "1.2",
+        "Right": "0.2"
+      },
+      "Mount": {
+        "Frame": [
+          "Floating"
+        ],
+        "Colour": "RED"
+      },
+      "ColourGlasses": "red",
+      "Price": 123
+    },
+    {
+      "glasses_id": 1,
+      "GlassesGraduation": {
+        "Left": "2.2",
+        "Right": "1.2"
+      },
+      "Mount": {
+        "Frame": [
+          "Metalic"
+        ],
+        "Colour": "Yello"
+      },
+      "ColourGlasses": "trasnparent",
+      "Price": 188
+    }
+  ],
+  "Adress": {
+    "NameStreet": "Corsega 34",
+    "Floor": "34",
+    "Door": "23",
+    "City": "Barcelona",
+    "CP": "Barcelona"
+  }
+},{
+  "_id": {
+    "$oid": "63fbbc11b9027cdf3bfd7b8b"
+  },
+  "Nom_Sup": "OjoOro",
+  "Phone_Number": 555555555,
+  "Fax_Sup": 44444444,
+  "NIF": "88888888A",
+  "BrandName": "Oakley",
+  "Brands": [
+    {
+      "glasses_id": 2,
+      "GlassesGraduation": {
+        "Left": "2.5",
+        "Right": "1.5"
+      },
+      "Mount": {
+        "Frame": [
+          "Metal"
+        ],
+        "Colour": "Black"
+      },
+      "ColourGlasses": "grey",
+      "Price": 200
+    },
+    {
+      "glasses_id": 3,
+      "GlassesGraduation": {
+        "Left": "1.8",
+        "Right": "0.8"
+      },
+      "Mount": {
+        "Frame": [
+          "Metal"
+        ],
+        "Colour": "Brown"
+      },
+      "ColourGlasses": "brown",
+      "Price": 350
+    }
+  ],
+  "Adress": {
+    "NameStreet": "Gran Via 20",
+    "Floor": "4",
+    "Door": "2",
+    "City": "Madrid",
+    "CP": "28013"
+  }
+}]
