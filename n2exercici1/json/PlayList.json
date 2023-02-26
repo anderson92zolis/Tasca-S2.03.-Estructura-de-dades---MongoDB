@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "63fbcd9b5cb42753fafc5f54"
+  },
+  "Name": "My Playlist",
+  "CreationDate": "2023-02-26T00:00:00Z",
+  "state": "Public",
+  "User": {
+    "$oid": "63fbcbd75cb42753fafc5f51"
+  },
+  "Video": {
+    "$oid": "63fbce3b5cb42753fafc5f57"
+  }
+}]

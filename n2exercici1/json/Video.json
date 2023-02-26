@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "63fbce3b5cb42753fafc5f57"
+  },
+  "Title": "cascada azul",
+  "Description": "this is a cascada azul en el centro de Panama",
+  "Size": 1024.5,
+  "NameFile": "vacaciones_video.mp4",
+  "LengthVideo": 60,
+  "Thumbnail": "thumbnail_image.jpg",
+  "NumberReproduction": 0,
+  "Likes": [
+    {
+      "likes_id": "61752b537a8df740d7cb6c3b",
+      "DateLikes": "2023-02-26T00:00:00Z"
+    }
+  ],
+  "Dislike": [
+    {
+      "Dislike_id": "61752b537a8df740d7cb6c3c",
+      "DateDislike": "2023-02-26T00:00:00Z"
+    }
+  ],
+  "State": "Public",
+  "Tag": [
+    "example",
+    "video"
+  ],
+  "NameUser": "\"John Doe",
+  "Date": {
+    "$date": {
+      "$numberLong": "1677369600000"
+    }
+  },
+  "Tags": [
+    {
+      "Tag_id": {
+        "$oid": "61752b537a8df740d7cb6c3d"
+      },
+      "NameTag": "music"
+    },
+    {
+      "Tag_id": {
+        "$oid": "61752b537a8df740d7cb6c3e"
+      },
+      "NameTag": "funny"
+    }
+  ]
+}]

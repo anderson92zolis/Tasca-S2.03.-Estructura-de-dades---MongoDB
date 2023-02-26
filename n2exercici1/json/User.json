@@ -1,0 +1,53 @@
+[{
+  "_id": {
+    "$oid": "63fbcbd75cb42753fafc5f51"
+  },
+  "Video": "aventuras en internet",
+  "Email": "john@hotmail.com",
+  "Password": "contrasena454",
+  "NameUser": "John Doe",
+  "BirthDate": {
+    "$date": {
+      "$numberLong": "631152000000"
+    }
+  },
+  "Sex": "Female",
+  "Country": "SPAIN",
+  "PostCode": "12345",
+  "Channel": [
+    {
+      "Name": "My Channel",
+      "Description": "This is my channel",
+      "CreationDate": "2023-02-26T00:00:00Z"
+    }
+  ],
+  "Subscription": [
+    {
+      "LikeDislike": "Like",
+      "Date": "2023-02-26T00:00:00Z"
+    }
+  ],
+  "Comment": [
+    {
+      "Commen_id": {
+        "$oid": "61752b537a8df740d7cb6c38"
+      },
+      "CommentText": "Great video!",
+      "Date": "2023-02-26T00:00:00Z",
+      "Reaction": {
+        "ReacionLike": [
+          {
+            "User_id": "61752b537a8df740d7cb6c39",
+            "date": "2023-02-26T00:00:00Z"
+          }
+        ],
+        "ReacionDisike": [
+          {
+            "User_id": "61752b537a8df740d7cb6c3a",
+            "date": "2023-02-26T00:00:00Z"
+          }
+        ]
+      }
+    }
+  ]
+}]
